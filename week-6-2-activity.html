@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">  
+
+     .sibling-element {
+
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+     .parent-element {
+      /*position: relative;*/
+        height: 800px;
+        padding:   10px;
+        background-color: #81adc8;
+
+    }
+    .main-element {
+        /*position: absolute;*/
+        /* relative it still there but it shifted*/ /*absolute it will see who the main element (parentnya) punya position ( if nda the point of movement will base on the page)*/
+        position: fixed; /*fixed will always remain same pos and absolute will ikut the parent go up and down also*/
+        /*left: 100px;
+        top: 30px;*/
+        right: 0;
+        bottom: 0;
+        background-color: yellow;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+ <div class="parent-element">
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+</div>
+</body>
+</html>
