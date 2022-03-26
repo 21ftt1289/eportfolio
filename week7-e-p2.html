@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week7-e-p2</title>
+	<style type="text/css">
+		h3{text-align: center;
+			display: none;}
+
+		table{border:1px solid;
+			border-collapse: collapse;
+			margin: auto;
+			width:50%;
+			border-style: hidden;}
+
+		tr{border: 1px solid;
+			border-collapse: collapse;
+			border-style: hidden;}
+
+		th{padding:10px;}
+
+		.line{display: inline;}
+	</style>
+</head>
+<body>
+<h3>Registration for Covid-19 Volunteer - &reg; C19-Team</h3>
+<form method="" action="">
+<table cellpadding="10">
+ <tr>
+ 	<th class="line">Fullname</th>
+ 	<td> <input type="text" name="fullname" pattern="[a-zA-Z]{,30}" title="only alphabets are allowed, lowercase or uppercase" size="30"></td>
+ </tr>
+<tr>
+	<th class="line">Email</th>
+	<td><input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="set to mail" size="30"></td>
+</tr>
+<tr>
+	<th class="line">Date you can start</th>
+	<td><input type="date" name="date" placeholder="mm/dd/yyyy" value="" min="2022/01/01" max="2030/12/31"></td>
+</tr>
+<tr>
+	<th class="line">Morning shift preference</th>
+	<td><input type="time" name="time"></td>
+</tr>
+<tr>
+	<th class="line">Evening shift perference</th>
+	<td><input type="time" name="time"></td>
+</tr>
+<tr>
+	<th class="line">How many hours you can work? In multiple of 3</th>
+	<td><input type="number" name="number" min="3" max="9"></td>
+</tr>
+<tr>
+	<th class="line">Distance you willing to commute to volunteer center?</th>
+	<td><label for="number">1</label><input type="range" name="Points" id="Points" value="3" min="1" max="15"><label for="number">15</label></td>
+</tr>
+<tr>
+	<th class="line">You currency perference for payment?</th>
+	<td><input type="radio" name="currency" id="currency" value="currency"><label for="&#163;">&#163;</label><input type="radio" name="currency" id="currency" value="currency"><label for="&#165;">&#165;</label><input type="radio" name="currency" id="currency" value="currency"><label for="&#128;">&#128;</label></td>
+</tr>
+<tr>
+	<th colspan="2"><textarea placeholder="Type your home address" rows="6" cols="40"></textarea></th>
+</tr>
+<tr>
+	<th colspan="2"><s>You will be given daily meals</s></th>
+</tr>
+<tr>
+	<th colspan="2"><input type="checkbox" checked disabled name="terms">I agree to all terms and conditions</th>
+</tr>
+<tr>
+	<th colspan="2">Prove you are not robot: 10 &#60; 20?<input type="text" name="prove" pattern="[&#60;]{1}" size="1"></th>
+</tr>
+<tr>
+	<td colspan="2"><center><input type="submit" value="Volunteer now!" ></center></td>
+</tr>
+<tr>
+	<td colspan="2"><center><input type="reset" value="Start over"></center></td>
+</tr>
+<tr>
+	<th colspan="2">For more informaton, visit MOH <a href="https://www.moh.gov.bn/Pages/Home.aspx">website</a></th>
+</tr>
+
+
+</table>
+</form>
+</body>
+</html>
